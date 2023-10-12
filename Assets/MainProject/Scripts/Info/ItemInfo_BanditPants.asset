@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06ff50875a33b714b80f9f62fbd4eba2, type: 3}
+  m_Name: ItemInfo_BanditPants
+  m_EditorClassIdentifier: 
+  _id: BanditPants
+  _title: BanditPants
+  _description: BanditPants
+  _maxItemsInInventorySlot: 5
+  _spriteIcon: {fileID: 21300000, guid: 9875a5311c0da5749b6ba78d3f42c8f3, type: 3}

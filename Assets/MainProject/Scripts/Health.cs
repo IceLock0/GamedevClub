@@ -6,26 +6,26 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] private float _maxHealth = 100.0f;
-    private float _currentHealth;
+    public float currentHealth { get; private set; } 
 
     public event Action<float> HealthChanged;
 
     private void Start()
     {
-        _currentHealth = _maxHealth;
+        currentHealth = _maxHealth;
     }
 
     public void ChangeHealth(float damage)
     {
-        _currentHealth -= damage;
+        currentHealth -= damage;
 
-        if (_currentHealth <= 0)
+        if (currentHealth <= 0)
         {
             Death();
         }
         else
         {
-            float _currentHealthPercant = _currentHealth / _maxHealth;
+            float _currentHealthPercant = currentHealth / _maxHealth;
             HealthChanged?.Invoke(_currentHealthPercant);
         }
     }

@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Inventory
+  - Grid
+  - Pants
+  - Proof
   layers:
   - Default
   - TransparentFX
@@ -11,7 +15,7 @@ TagManager:
   - enemy
   - Water
   - UI
-  - 
+  - Drop
   - 
   - 
   - 

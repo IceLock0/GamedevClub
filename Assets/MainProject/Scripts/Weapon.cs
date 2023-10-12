@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour, IAttackerable
 {
-    [SerializeField] private int _ammo = 10;
+    [SerializeField] private int _ammo = 20;
     [SerializeField] private float _damage = 10.0f;
     [SerializeField] private float _fireRate = 0.1f;
     [SerializeField] private float _nextFireTime = 0.0f;

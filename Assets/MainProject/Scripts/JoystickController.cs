@@ -4,7 +4,8 @@ using UnityEngine;
 public class JoystickController : MonoBehaviour, IMoveable
 {
     [SerializeField] private FixedJoystick _joystick;
-    [SerializeField] private float _moveSpeed = 3.0f;
+
+    private float _moveSpeed = 3.0f;
 
     private Rigidbody2D _rb;
 
@@ -12,6 +13,8 @@ public class JoystickController : MonoBehaviour, IMoveable
     private float _verticalInput;
 
     private bool _facingRight = true;
+
+    public float moveSpeed => _moveSpeed;
 
     private void FixedUpdate()
     {
